@@ -35,6 +35,18 @@
     "installUrl": "https://apps.apple.com/app/id6759853640"
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Is Gorillax free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Workout tracking, programs, history, challenges and the feed are free with no ads. An optional subscription (Gorillax+) unlocks extras."}},
+      {"@type": "Question", "name": "Does Gorillax work offline?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, everything works offline; sync resumes automatically once you are back online."}},
+      {"@type": "Question", "name": "Is Gorillax available on Android?", "acceptedAnswer": {"@type": "Answer", "text": "Gorillax is available on iPhone via the App Store. The Android version is in the works."}},
+      {"@type": "Question", "name": "Which languages does the app support?", "acceptedAnswer": {"@type": "Answer", "text": "English, French, Spanish, German, Italian, Portuguese, Japanese and Arabic."}}
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="orbs"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
@@ -70,36 +82,65 @@
       </div>
     </section>
 
+    <div class="statband reveal">
+      <div><span class="num">132</span><span class="lbl">exercises</span></div>
+      <div><span class="num">8</span><span class="lbl">languages</span></div>
+      <div><span class="num">100%</span><span class="lbl">offline</span></div>
+      <div><span class="num">0</span><span class="lbl">ads</span></div>
+    </div>
+
+    <section id="how">
+      <p class="kicker reveal">Three steps</p>
+      <h2 class="reveal">How it works</h2>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="n">1</span>
+          <h3>Build your workout</h3>
+          <p>Pick exercises from the catalog, create your own, or let the generator build a program tailored to you.</p>
+        </div>
+        <div class="step reveal">
+          <span class="n">2</span>
+          <h3>Track at the gym</h3>
+          <p>Weight, reps, automatic rest, supersets. Two taps per set — even with no signal in the basement.</p>
+        </div>
+        <div class="step reveal">
+          <span class="n">3</span>
+          <h3>Watch yourself progress</h3>
+          <p>PRs falling, charts climbing, a weekly recap to share. Proof, week after week.</p>
+        </div>
+      </div>
+    </section>
+
     <section id="features">
-      <p class="kicker">What's in your pocket</p>
-      <h2>A real training partner</h2>
+      <p class="kicker reveal">What's in your pocket</p>
+      <h2 class="reveal">A real training partner</h2>
       <div class="grid">
-        <div class="card">
+        <div class="card reveal">
           <div class="ico">🏋️</div>
           <h3>The most precise tracker</h3>
           <p>Weight, reps and rest in two taps. Type it in or spin the wheel, rest timer starts automatically, link supersets with one gesture.</p>
         </div>
-        <div class="card">
+        <div class="card reveal">
           <div class="ico">📈</div>
           <h3>Your progress, proven</h3>
           <p>PRs detected automatically, lines trending up, tonnage climbing. Last time's numbers show right next to every set.</p>
         </div>
-        <div class="card">
+        <div class="card reveal">
           <div class="ico">🤖</div>
           <h3>Programs made for you</h3>
           <p>Generate a program tailored to your goals in a few questions, or build your own exercise by exercise.</p>
         </div>
-        <div class="card">
+        <div class="card reveal">
           <div class="ico">🔥</div>
           <h3>Challenges &amp; community</h3>
           <p>Join challenges, climb the leaderboard, share your workouts in the feed and push your friends.</p>
         </div>
-        <div class="card">
+        <div class="card reveal">
           <div class="ico">📸</div>
           <h3>Weekly recap to share</h3>
           <p>Every week, a styled card of your achievements, ready to post as a story. Pride is meant to be shared.</p>
         </div>
-        <div class="card">
+        <div class="card reveal">
           <div class="ico">🧮</div>
           <h3>Gym rat tools</h3>
           <p>Estimated 1RM, plate calculator, BMI, calories: everything you compute in your head, done better.</p>
@@ -108,8 +149,8 @@
     </section>
 
     <section id="screens">
-      <p class="kicker">The app in pictures</p>
-      <h2>Dark, fast, frictionless</h2>
+      <p class="kicker reveal">The app in pictures</p>
+      <h2 class="reveal">Dark, fast, frictionless</h2>
       <div class="shots">
         <figure><img src="assets/shot-accueil.jpg" alt="Home: weekly goal and streak" loading="lazy" /><figcaption>Home</figcaption></figure>
         <figure><img src="assets/shot-historique.jpg" alt="History and progress charts" loading="lazy" /><figcaption>Progress</figcaption></figure>
@@ -120,14 +161,48 @@
       <p style="color: var(--muted); font-size: 0.85rem;">Screenshots shown in French — the app speaks English, French, Spanish, German, Italian, Portuguese, Japanese and Arabic.</p>
     </section>
 
+    <section id="faq">
+      <p class="kicker reveal">FAQ</p>
+      <h2 class="reveal">Everything you're wondering</h2>
+      <div class="faq reveal">
+        <details>
+          <summary>Is it really free?</summary>
+          <p>Yes. Workout tracking, programs, history, challenges and the feed are free, with no ads. An optional subscription (Gorillax+) unlocks extras to support the project.</p>
+        </details>
+        <details>
+          <summary>Does it work offline?</summary>
+          <p>Yes — everything works offline: track your workout in the deepest gym basement. Sync resumes automatically as soon as you're back online.</p>
+        </details>
+        <details>
+          <summary>Is it available on Android?</summary>
+          <p>Gorillax is available on iPhone (App Store). The Android version is in the works.</p>
+        </details>
+        <details>
+          <summary>What about my data?</summary>
+          <p>Your training data is yours: no reselling, no targeted ads. Details in the <a href="privacy-en.html">privacy policy</a>.</p>
+        </details>
+        <details>
+          <summary>Which languages?</summary>
+          <p>English, French, Spanish, German, Italian, Portuguese, Japanese and Arabic.</p>
+        </details>
+      </div>
+    </section>
+
     <section>
-      <div class="cta">
-        <h2>Unleash the beast in you today.</h2>
-        <p>Free, no ads, and everything works even offline.</p>
-        <div class="badges">
-          <a href="https://apps.apple.com/app/id6759853640" aria-label="Download Gorillax on the App Store">
-            <img class="store" src="assets/appstore-badge-en.svg" alt="Download on the App Store" />
-          </a>
+      <div class="cta reveal">
+        <div class="cta-mascot" role="img" aria-label="The Gorillax gorilla mascot in a gym"></div>
+        <div class="cta-body">
+          <h2>Unleash the beast in you today.</h2>
+          <p>Free, no ads, and everything works even offline.</p>
+          <div class="badges">
+            <a href="https://apps.apple.com/app/id6759853640" aria-label="Download Gorillax on the App Store">
+              <img class="store" src="assets/appstore-badge-en.svg" alt="Download on the App Store" />
+            </a>
+            <div class="qr-wrap">
+              <span class="qr"><img src="assets/qr-appstore.svg" alt="QR code to the App Store" /></span>
+              <p class="qr-hint">Scan to install</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -144,5 +219,20 @@
       </div>
     </footer>
   </div>
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
 </body>
 </html>
