@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>La Salle — l'univers Gorillax</title>
+  <meta name="description" content="Une salle sans adresse, ouverte 24/7, un néon qui grésille. Rencontre le Coach, Did et Shella — les trois voix qui vivent dans la tête de tout pratiquant." />
+  <link rel="canonical" href="https://gorillaxapp.com/lasalle.html" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Gorillax" />
+  <meta property="og:title" content="La Salle — l'univers Gorillax" />
+  <meta property="og:description" content="Une salle sans adresse, ouverte 24/7. Le Coach, Did et Shella t'attendent. Le poids, il ment pas." />
+  <meta property="og:url" content="https://gorillaxapp.com/lasalle.html" />
+  <meta property="og:image" content="https://gorillaxapp.com/assets/troupe.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="apple-itunes-app" content="app-id=6759853640" />
+  <link rel="stylesheet" href="landing.css" />
+  <style>
+    .lore {
+      max-width: 46rem;
+      color: #D4D4D8;
+      font-size: 1.05rem;
+    }
+    .lore .neon {
+      color: #A78BFA;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-shadow: 0 0 18px rgba(139, 92, 246, 0.8);
+    }
+    .troupe-hero {
+      border-radius: 24px;
+      border: 1px solid var(--panel-border);
+      overflow: hidden;
+      margin: 2rem 0 0;
+      box-shadow: 0 24px 70px rgba(99, 102, 241, 0.25);
+    }
+    .troupe-hero img { width: 100%; display: block; }
+    .persona {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 0;
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
+      border-top-color: var(--panel-highlight);
+      border-radius: 24px;
+      overflow: hidden;
+      margin-bottom: 1.4rem;
+    }
+    .persona.flip { grid-template-columns: 1.2fr 0.8fr; }
+    .persona .pic {
+      min-height: 300px;
+      background-size: cover;
+      background-position: center 18%;
+    }
+    .persona .pic.fade-r {
+      -webkit-mask-image: linear-gradient(to right, black 70%, transparent);
+      mask-image: linear-gradient(to right, black 70%, transparent);
+    }
+    .persona .pic.fade-l {
+      -webkit-mask-image: linear-gradient(to left, black 70%, transparent);
+      mask-image: linear-gradient(to left, black 70%, transparent);
+    }
+    .persona .bio { padding: 1.8rem 1.8rem 1.6rem; }
+    .persona .role {
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      margin-bottom: 0.3rem;
+    }
+    .persona h3 { font-size: 1.5rem; margin: 0 0 0.6rem; letter-spacing: -0.01em; }
+    .persona p { color: var(--muted); font-size: 0.95rem; margin: 0 0 1rem; }
+    .quotes { display: flex; flex-direction: column; gap: 0.45rem; }
+    .quotes span {
+      font-size: 0.9rem;
+      color: #D4D4D8;
+      border-left: 3px solid;
+      padding-left: 0.8rem;
+      font-style: italic;
+    }
+    .coach .role, .coach .quotes span { color: #A5B4FC; border-color: #6366F1; }
+    .did .role, .did .quotes span { color: #FCD34D; border-color: #F59E0B; }
+    .shella .role, .shella .quotes span { color: #F9A8D4; border-color: #EC4899; }
+    .coach .quotes span, .did .quotes span, .shella .quotes span { color: #D4D4D8; }
+    @media (max-width: 700px) {
+      .persona, .persona.flip { grid-template-columns: 1fr; }
+      .persona .pic { min-height: 240px; }
+      .persona .pic.fade-r, .persona .pic.fade-l {
+        -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent);
+        mask-image: linear-gradient(to bottom, black 60%, transparent);
+      }
+      .persona.flip .pic { order: -1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="orbs"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+
+  <div class="wrap">
+    <header>
+      <a class="brand" href="/"><img src="assets/icon.png" alt="" width="38" height="38" />Gorillax</a>
+      <a class="lang-switch" href="/">← Accueil</a>
+    </header>
+
+    <section class="hero" style="display:block; padding-bottom:2rem;">
+      <h1>Bienvenue à <span class="grad">La Salle.</span></h1>
+      <div class="lore">
+        <p>
+          Une salle de muscu sans nom sur la devanture. Juste un néon <span class="neon">GORILLAX</span>
+          qui grésille. Ouverte 24/7 — personne n'a jamais vu la porte fermée.
+        </p>
+        <p>
+          Le truc, c'est qu'elle n'a pas d'adresse. <strong>Elle est en toi.</strong>
+          Chaque fois que tu lances une séance, tu pousses la porte. Et à l'intérieur,
+          il y a un registre : tout ce qui est noté a eu lieu. Le reste n'existe pas.
+        </p>
+        <p>Trois habitants t'attendent. Tu les connais déjà — ils vivent dans ta tête.</p>
+      </div>
+      <div class="troupe-hero reveal">
+        <img src="assets/troupe.jpg" alt="Le Coach, Did et Shella dans la salle" />
+      </div>
+    </section>
+
+    <section>
+      <div class="persona coach reveal">
+        <div class="pic fade-r" style="background-image:url('assets/coach.jpg')" role="img" aria-label="Le Coach, gorille massif en marcel blanc et lunettes de soleil"></div>
+        <div class="bio">
+          <div class="role">Le Coach — la maîtrise</div>
+          <h3>Gorillax</h3>
+          <p>
+            Le patron. Personne ne sait s'il possède la salle ou si la salle l'a toujours contenu.
+            Il ne s'entraîne plus à l'écran — il n'a plus rien à prouver. Il parle peu, et chaque
+            phrase tombe comme une barre de 200 kg. Ses lunettes ? Jamais retirées. Son hochement
+            de tête ? La récompense la plus rare de l'univers connu.
+          </p>
+          <div class="quotes">
+            <span>« Le poids, il ment pas. »</span>
+            <span>« On reste pas motivé, petit. On revient quand même. »</span>
+            <span>« …Pas mal, petit. » <em style="opacity:.6">(entendu deux fois en vingt ans)</em></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="persona did flip reveal">
+        <div class="bio">
+          <div class="role">Le cobaye — l'étincelle</div>
+          <h3>Did</h3>
+          <p>
+            Le client de l'aube des temps. Bandeau vissé, shaker greffé à la main, il teste TOUT
+            en premier — les mythes, les machines, les programmes trouvés à 2h du matin — et ça
+            tourne toujours mal. C'est son métier : il fait les erreurs pour que tu n'aies pas à
+            les faire. Il recommence son « Jour 1 » tous les deux mois. On l'adore pour ça.
+          </p>
+          <div class="quotes">
+            <span>« C'est LÉGER. » <em style="opacity:.6">(ce n'était pas léger)</em></span>
+            <span>« J'ai testé pour toi, frérot. »</span>
+            <span>« 87 % du muscle c'est le mental. C'est la science. » <em style="opacity:.6">(ce n'est pas la science)</em></span>
+          </div>
+        </div>
+        <div class="pic fade-l" style="background-image:url('assets/did.jpg')" role="img" aria-label="Did, chimpanzé surexcité en marcel jaune et bandeau rouge"></div>
+      </div>
+
+      <div class="persona shella reveal">
+        <div class="pic fade-r" style="background-image:url('assets/shella.jpg')" role="img" aria-label="Shella, chimpanzée athlétique au regard assuré"></div>
+        <div class="bio">
+          <div class="role">La reine — le niveau</div>
+          <h3>Shella</h3>
+          <p>
+            La plus forte de la salle, et elle le sait. Son registre est impeccable, ses séries
+            sont parfaites, et elle ne t'expliquera jamais rien. Écouteurs vissés, regard qui t'a
+            déjà classé. Elle ne calcule personne — surtout pas Did, qui passe sa vie à chercher
+            son respect. Le jour où elle retire un écouteur pour t'écouter, encadre-le.
+          </p>
+          <div class="quotes">
+            <span>« C'est mignon. »</span>
+            <span>« On n'a pas le même programme. »</span>
+            <span>« Même pas surprise. »</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="cta reveal">
+        <div class="cta-mascot" role="img" aria-label="Le Coach dans la salle"></div>
+        <div class="cta-body">
+          <h2>La Salle est ouverte. Elle t'attend.</h2>
+          <p>Pousse la porte : lance ta première séance, et note-la au Registre.</p>
+          <div class="badges">
+            <a href="https://apps.apple.com/app/id6759853640" aria-label="Télécharger Gorillax dans l'App Store">
+              <img class="store" src="assets/appstore-badge-fr.svg" alt="Télécharger dans l'App Store" />
+            </a>
+            <div class="qr-wrap">
+              <span class="qr"><img src="assets/qr-appstore.svg" alt="QR code vers l'App Store" /></span>
+              <p class="qr-hint">Scanne pour installer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="foot-row">
+        <span>© 2026 Gorillax</span>
+        <nav class="foot-links">
+          <a href="/">Accueil</a>
+          <a href="privacy.html">Confidentialité</a>
+          <a href="terms.html">Conditions</a>
+          <a href="support.html">Support</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>
